@@ -32,3 +32,26 @@
 .drawer-nav{
     display: none;
 }
+
+/* Chatchcopy */
+.chatchcopy{
+    height: 550px;
+    background-image: url("../img/mv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.chatchcopy-container{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.chatchcopy-title{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
