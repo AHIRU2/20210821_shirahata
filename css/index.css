@@ -1,91 +1,12 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 30px;
-    left: 0;
-    top: 0;
-    position: sticky;
-    background-color: #fff;
-}
-
-a.header-link{
-    text-decoration:none; 
-    color: #292929;
-}
-
-a.header-link:hover{
-    color: dimgrey;
-}
-
-a.drawer-link{
-    text-decoration:none; 
-    color: rgb(49, 49, 255);
-}
-
-a.drawer-link:hover{
-    color: cornflowerblue;
-}
-
-.header-ttl{
-    font-size: 24px;
-    width: 80px;
-}
-
-.header-nav-list{
-    display: flex;
-    font-weight: bold;
-    z-index: 1;   
-}
-
-.header-nav-item{
-    margin-right: 30px;
-    text-decoration:none;
-}
-
-.menu{
-    display: none;
-}
-
-.drawer-nav{
-    display: none;
-}
-
 /* Chatchcopy */
 .chatchcopy{
     height: 550px;
-    background-image: url("../img/mv.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.chatchcopy-container{
-    color: #fff;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;*/
-    position: relative;
-    left: 50%;
-    top: 50%;
-    /*max-width: 100%;*/
-    transform: translate(-50%,-50%);
 }
 
 .chatchcopy-title{
-    font-weight: bold;
     font-size: 50px;
-    text-align: center;
-    line-height: 1.5em;
 }
 
-.chatchcopy-item{
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
 
 /* future */
 .future{
@@ -157,27 +78,6 @@ a.drawer-link:hover{
 }
 
 /* Button */
-.btn{
-    display: block;
-    width: 300px;
-    padding:15px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: rgb(190, 0, 15); 
-    font-weight: bold; 
-    margin:0 auto;
-}
-
-.btn:hover{
-    background-color: rgb(226, 102, 112);
-}
-
-.btn-line{
-    display: flex;
-    align-items: center;
-}
-
 .company{
     width: 50%;
 }
@@ -192,6 +92,8 @@ a.drawer-link:hover{
     line-height: 10;
     text-align: center;
     align-items: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .btn#btn-recruit{
@@ -201,12 +103,18 @@ a.drawer-link:hover{
     text-align: center;
     background-color: #202020;
     align-items: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .btn#btn-recruit:hover{
     background-color: rgb(136, 136, 136);
 }
 
+#btn-company,
+#btn-recruit{
+    font-size: 25px;
+}
 
 
 /* News */
@@ -262,24 +170,20 @@ a.news-link{
 
 .blog-contents{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10%;
+    justify-content: center;
 }
 
-/* 
-.wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-  } */
-
-.blog-item-list{
-    width: 100%;
-    margin-bottom: 20px;
+.blog-item-list:nth-child(2){
+    margin: 0 20px;
 }
 
-.blog-imag img{
+.blog-item-list img{
     width: 100%;
+}
+
+.blog-item-list img:hover{
+    opacity: 0.6;
+    transition-duration: 0.3s;
 }
 
 .blog-item-sentence{
@@ -318,47 +222,6 @@ a.news-link{
     margin-bottom: 50px;
 }
 
-
-/* Footer */
-.footer{
-    padding: 20px 10%;
-    color: #fff;
-    background-color: #202020;
-}
-
-.footer-contents{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-}
-
-.footer-nav-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-nav-item:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 10px;
-  }
-  
-  .footer-nav-item a {
-    text-decoration:none; 
-    color: #fff;
-  }
-
-  .footer-nav-item:hover a {
-      color: gainsboro;
-  }
-
-  .footer-nav-item:last-child:after {
-    display: none;
-  }
-
-
 @media screen and (min-width:768px){
     .survis-item-list{
         width: 45%;
@@ -374,25 +237,28 @@ a.news-link{
 }
 
 @media screen and (max-width:768px) {
-    .header-nav{
-        display: none;
-    }
-
-    .footer-contents{
-        display: flex;
-        justify-content: flex-start;
-        font-size: 12px;
-    }
-
-    .footer-nav-list {
-        display: block;
+      
+      .blog-contents{
+          display: block;
       }
-    
-    .footer-nav-item:after {
-        content: normal;
-        display: inline-block;
-        padding: 0 10px;
+
+      .blog-item-list{
+        margin: 10px 50px 10px 50px;
+      }
+
+      .blog-item-list:nth-child(2){
+        margin: 10px 50px 10px 50px;
     }
+
+      .blog-item-list img{
+          width: 100%;
+      }
+
+      .blog-title{
+        font-size: 18px;
+        font-weight: bold;  
+      }
+
 }
 
 

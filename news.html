@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社TECH</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/news.css">
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
@@ -32,7 +35,7 @@
             <span class="menu-middle"></span>
             <span class="menu-bottom"></span>
         </div>
-        <nav class="drawer-nav">
+        <nav class="drawer-nav" id="drawer-nav">
             <ul class="drawer-nav-list">
                 <li class="drawer-nav-item"><a class="drawer-link" href="index.html">ホーム</a></li>
                 <li class="drawer-nav-item"><a class="drawer-link" href="service.html">事業内容</a></li>
@@ -53,9 +56,24 @@
     <!-- News -->
     <div class="news">
         <div class="nesw-content-list">
-            <li class="news-contents"><a class="news-link" href="index.html">2019/07/17 <strong>会社を創業しました。</strong></a></li>
-            <li class="news-contents"><a class="news-link" href="index.html">2020/04/01 <strong>資金調達を行いました。</strong></a></li>
-            <li class="news-contents"><a class="news-link" href="index.html">2020/10/01 <strong>東京新聞に掲載されました。</strong></a></li>
+            <article class="news-contents">
+                <a href="#" class="news-link">
+                    <span class="news-item-date">2019/07/17</span>
+                    <h2 class="news-item-ttl">会社を創業しました。</h2>
+                </a>
+            </article>
+            <article class="news-contents">
+                <a href="#" class="news-link">
+                    <span class="news-item-date">2020/04/01</span>
+                    <h2 class="news-item-ttl">資金調達を行いました。</h2>
+                </a>
+            </article>
+            <article class="news-contents">
+                <a href="#" class="news-link">
+                    <span class="news-item-date"> 2020/10/01</span>
+                    <h2 class="news-item-ttl">東京新聞に掲載されました。</h2>
+                </a>
+            </article>
         </div>
     </div>
     <!-- Contact -->
@@ -81,6 +99,7 @@
             </nav>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>

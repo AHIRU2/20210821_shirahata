@@ -1,233 +1,37 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    padding: 0 30px;
-    left: 0;
-    top: 0;
-    position: sticky;
-    background-color: #fff;
-}
-
-a.header-link{
-    text-decoration:　none; 
-    color: #292929;
-}
-
-a.header-link:hover{
-    color: dimgrey;
-}
-
-a.drawer-link{
-    text-decoration:none; 
-    color: rgb(49, 49, 255);
-}
-
-a.drawer-link:hover{
-    color: cornflowerblue;
-}
-
-.header-ttl{
-    font-size: 24px;
-    width: 80px;
-}
-
-.header-nav-list{
-    display: flex;
-    font-weight: bold;
-    z-index: 1;   
-}
-
-.header-nav-item{
-    margin-right: 30px;
-    text-decoration:none;
-}
-
-.menu{
-    display: none;
-}
-
-.drawer-nav{
-    display: none;
-}
-
-/* Chatchcopy */
-.chatchcopy{
-    height: 550px;
-    background-image: url("../img/mv.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.chatchcopy-container{
-    color: #fff;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;*/
-    position: relative;
-    left: 50%;
-    top: 50%;
-    /*max-width: 100%;*/
-    transform: translate(-50%,-50%);
-}
-
-.chatchcopy-title{
-    font-weight: bold;
-    font-size: 50px;
-    text-align: center;
-    line-height: 1.5em;
-}
-
-.chatchcopy-item{
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-}
-
-/* Button */
-.btn{
-    display: block;
-    width: 300px;
-    padding:15px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: rgb(190, 0, 15); 
-    font-weight: bold; 
-    margin:0 auto;
-}
-
-.btn:hover{
-    background-color: rgb(226, 102, 112);
-}
-
-.btn-line{
-    display: flex;
-    align-items: center;
-}
-
 /* News */
 .news{
-    margin-top: 80px;
+    margin-top: 20px;
     padding: 85px 5% 80px 5%;
 }
 
-a.news-link{
-    text-decoration:none; 
-    color: #292929;
-}
-
 .news-contents{
-    list-style: none;
-    margin-top: 10px;
-    padding: 25px;
-    border: 1px solid;
+    margin-bottom: 10px;
 }
 
-.news-contents:hover{
-    color: gainsboro;
-}
-
-.contact{
-    background-color: rgb(238, 238, 238);
-    padding: 30px;
-}
-
-.contact-ttl{
-    margin-top: 80px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    text-align: center;
-}
-
-.contact-detail{
-    text-align: center;
-}
-
-#btn-contact{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-/* Footer */
-.footer{
-    padding: 20px 10%;
-    color: #fff;
-    background-color: #202020;
-}
-
-.footer-contents{
+.news-link{
+    text-decoration: none;
+    color: #292929;
+    border: 1px solid #292929;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
+    justify-content: left;
+    padding: 20px 0px 20px 10px;
 }
 
-.footer-nav-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-nav-item:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 10px;
-  }
-  
-  .footer-nav-item a {
-    text-decoration:none; 
-    color: #fff;
-  }
-
-  .footer-nav-item:hover a {
-      color: gainsboro;
-  }
-
-  .footer-nav-item:last-child:after {
-    display: none;
-  }
+.news-link:hover{
+    opacity: 60%;
+    transition: .5s;
+}
 
 
-@media screen and (min-width:768px){
-    .survis-item-list{
-        width: 45%;
-        margin-bottom: 0;
+@media screen and (max-width:400px) {
+
+    .news-link{
+        font-size: 14px;
+        padding: 10px 0px 10px 10px;
     }
-
-    .blog-item-list{
-        width: 20%;
-        margin-bottom: 0;
-    }
-
 
 }
 
-@media screen and (max-width:768px) {
-    .header-nav{
-        display: none;
-    }
-
-    .footer-contents{
-        display: flex;
-        justify-content: flex-start;
-        font-size: 12px;
-    }
-
-    .footer-nav-list {
-        display: block;
-      }
-    
-    .footer-nav-item:after {
-        content: normal;
-        display: inline-block;
-        padding: 0 10px;
-    }
-}
 
 
 
